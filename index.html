@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Live Proctoring System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>AI Live Proctoring Examination System</h1>
+
+        <div class="video-section">
+
+            <!-- Webcam Preview -->
+            <div class="card">
+                <h2>Webcam Preview</h2>
+                <video id="webcamVideo" autoplay playsinline muted></video>
+            </div>
+
+            <!-- Screen Sharing Preview -->
+            <div class="card">
+                <h2>Screen Sharing Preview</h2>
+                <video id="screenVideo" autoplay playsinline muted></video>
+            </div>
+
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <button onclick="startCamera()">
+                Start Camera
+            </button>
+
+            <button onclick="stopCamera()">
+                Stop Camera
+            </button>
+
+            <button onclick="startScreenShare()">
+                Share Screen
+            </button>
+
+            <button onclick="stopScreenShare()">
+                Stop Screen
+            </button>
+
+        </div>
+
+        <!-- Status -->
+        <div class="status">
+            <p id="cameraStatus">Camera Status: OFF</p>
+            <p id="screenStatus">Screen Share Status: OFF</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
